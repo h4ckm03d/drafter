@@ -1,4 +1,4 @@
-languange: go
+language: cpp
 
 os:
 - linux
