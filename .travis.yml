@@ -1,8 +1,9 @@
-languange: C++
+languange: go
 
 os:
 - linux
 - osx
+
 before_deploy:
 - "./tools/travis/bundle.sh"
 deploy:
