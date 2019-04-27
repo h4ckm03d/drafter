@@ -4,6 +4,8 @@ os:
 - linux
 - osx
 
+install: make get-deps
+
 before_deploy:
 - "./tools/travis/bundle.sh"
 deploy:
