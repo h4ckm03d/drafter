@@ -1,2 +1,3 @@
 # drafter
-drafter maker
+
+This repository contains drafter maker for easier generate release version

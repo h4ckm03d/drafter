@@ -1,0 +1,14 @@
+os:
+- linux
+- osx
+before_deploy:
+- "./tools/travis/bundle.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: sdUz8mhtKw7p9HTk/4t3P4auWsjzGYEiInLyAYD+ZnVi5PQKaxTtFBtYQ1I/cbcMCnMs5KxtXWFGvmaHFwIaUMEqFPEMmCFbTNmbdxObOyDkSCLRrmLtT4AXRHzQvz69S6LKwJN89OEcBGmiMj+PR2XlFYXFDHzJFV3wZOoVU2r/pnVtKe28XT4Y9GuzpoKfrKHoPEzOGOeTvcccfUxaT2AyCW7nG+7xagCajozA/pSJ9A+IYgcpV3ctGrINNOgQBf3ZkDzj0r1TK22q4aDI8prVGWoWlgkCrspRYX+IAoHHsdcBS8z/YOXgVRecRlsGQirI+Dy2RfKyUTpJqSdaCw7FmkYM/z6/5QDajMcw3N1F14DBKNZVxRf69UKkm9IY+tL6oNLiVOLtpZHrFYnNqQFY59MX1Bzrj78GLx/r3ePlheAdDx9rbB2fKxem7Ws0OOm9EsFtvFsnw+kkao2w1Y9a1hMgt+fp3dVrawVOpZA6nesPjpIpO8S9LVavA07N55BBW2WYx4Iv7K1X1eOXEwe5xxUBfWEpZuoAh8ETJtbEQFeQig30OdSE5I5H86CJ1nDzvf+8xxRId2WL/0R6MjiHUSNpUq+0LBZfiUwcElhTG2msD4CSCUWE41d4J0tVXrNtOqYOsYDMpYXaoZO8RLQqW+slfbWDLt2cGHtFfCI=
+  file: drafter-$DRAFTER_VERSION.${TRAVIS_OS_NAME/osx/darwin}-amd64.tar.gz
+  skip_cleanup: true
+  on:
+    repo: h4ckm03d/drafter
+    tags: true
