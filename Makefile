@@ -17,6 +17,6 @@ ext/drafter/bin/drafter:
 	rm drafter-$(DRAFTER_VERSION).tar.gz
 	mv ext/drafter-$(DRAFTER_VERSION) ext/drafter
 	$(MAKE) -C ext/drafter drafter
-	cp ext/drafter/bin/drafter drafter
+	cp ext/drafter/bin/drafter drafter-$(GOOS)
 
 .PHONY: clean
