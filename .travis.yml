@@ -8,7 +8,7 @@ deploy:
   provider: releases
   api_key:
     secure: dHQyMUeK8EulSbW2Zkb5uGcc4PdLgBO0B+bjwvMkYQvto/sKoHRo9SmS/U+gy6Gxo7yU+RIAapLHdvD/5FrUNu4HJv5zVyKC6UQIQAAWIocF2Fo5ifdFBVh1KvaO9IO7VHRApIsA6ayo7zpicz0/L6RUtWjteRcrc+/ZtQNK3Sf2kq525XEHqqtg/bOz+QeL+cF29ulhef/P5OQwmRFB2/CIuxz36+FIaGMSWHnMueg4NNCgkrAtCqxFXEd64ds2Df8FJANmxkTpFsU8RV6Rsl+Su9BSSRAbxEUZgvBkff+EG/32Qdn6osfshWfNh5fouemisDsDzKhJRhye7O63HU3exwVfDEIk6Zsec0A171JK+427cjUKex7QDqVE6WC0RpWl1eA8FuhopRSSlgv9O8KLDvH5ujBEU0ErrQ9dOyDvmhXCm9KZ4hUb9cYaMQzY+7Sn9OaE7wJABnNohYe7Zq9ClIEU9V7TtXuM0CgC5/yZr4Zr0JWByj8iEWocVAb1PsadTq/wrPDoTnbPK3FRJsc8bqoCIgZ4Y3HRRbZ8KpKcrVc7RKE/S+DQs1CwMUMNWaLeBSQIB8qHcJNE8wbsgNekVD2h4RYFZevncriwEeSzxhlXN96EKrAVcVrqAIq4ezPiXOjM9hwtu9SlrSgU4J4Kj00Rfqzri+lQI+motXM=
-  file: drafter-$DRAFTER_VERSION-$TRAVIS_TAG.${TRAVIS_OS_NAME/osx/darwin}-amd64.tar.gz
+  file: drafter-$TRAVIS_TAG.${TRAVIS_OS_NAME/osx/darwin}-amd64.tar.gz
   skip_cleanup: true
   on:
     repo: h4ckm03d/drafter
